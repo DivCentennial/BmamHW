@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-one',
@@ -7,11 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './one.css'
 })
 
-
-
 export class One {
 
   @Input() msgchild:string ="";
 @Input() msgchild2: string ="";
+
+@Output() msgOutput:EventEmitter<string>= new EventEmitter(); 
+outmsg:string = " from child to parent !!!"
+
+str1:string= "Testing child value"
+
+sendValue(){ 
+   this.msgOutput.emit(this.outmsg); 
+   console.log("hello") }
+  
 
 }

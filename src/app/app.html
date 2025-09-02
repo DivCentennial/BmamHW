@@ -22,4 +22,8 @@ a is 10 and b is 20 <br>
 
 <app-one [msgchild]="str"></app-one>
 <app-one [msgchild2]="str2"></app-one>
+
+<app-one [msgchild]="str" (msgOutput)="Getdata($event)"></app-one>
+<h2>Child says to parent: {{ title() }}</h2>
+
 <router-outlet></router-outlet>

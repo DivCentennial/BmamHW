@@ -19,12 +19,20 @@ export class App {
 
   empno: number;
   ename: string;
- c=10;
+  c = 10;
 
- str = "hello from PARENT"; // or str : string = "hello";
- str2= "Hello from PARENT str2";
-  constructor(private empl:Emp){
-    this.empno=this.empl.eno;
-    this.ename=this.empl.ename;  }
+  str = "hello from PARENT"; // or str : string = "hello";
+  str2 = "Hello from PARENT str2";
+
+  Getdata(event: any) {
+     console.log(event)              
+     this.title.set(event);  //Variation from the ppt as signal is also present
+    
+  }
+
+  constructor(private empl: Emp) {
+    this.empno = this.empl.eno;
+    this.ename = this.empl.ename;
+  }
     
 }
