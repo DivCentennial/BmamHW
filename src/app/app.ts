@@ -5,12 +5,13 @@ import { Products } from './products/products';
 import {Emp} from './emp';
 import { Testlazy } from "./testlazy/testlazy";
 import { One } from "./one/one";
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, Testlazy, One],
+  imports: [CommonModule,RouterOutlet, RouterLink, RouterLinkActive, Testlazy, One],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
@@ -20,7 +21,7 @@ export class App {
   empno: number;
   ename: string;
   c = 10;
-
+d=11;
   str = "hello from PARENT"; // or str : string = "hello";
   str2 = "Hello from PARENT str2";
 

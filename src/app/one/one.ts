@@ -13,7 +13,7 @@ export class One {
 @Input() msgchild2: string ="";
 
 @Output() msgOutput:EventEmitter<string>= new EventEmitter(); 
-outmsg:string = " from child to parent !!!"
+outmsg:string = " from child to parent !!!";
 
 str1:string= "Testing child value"
 
@@ -21,5 +21,4 @@ sendValue(){
    this.msgOutput.emit(this.outmsg); 
    console.log("hello") }
   
-
 }
