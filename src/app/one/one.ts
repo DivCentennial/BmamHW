@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-one',
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './one.html',
   styleUrl: './one.css'
 })
+
+
+
 export class One {
+
+  @Input() msgchild:string ="";
+@Input() msgchild2: string ="";
 
 }
