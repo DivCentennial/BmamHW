@@ -8,18 +8,17 @@
 <h2>from service {{empno}}</h2>
 
 <blockquote style ="border:1px solid black; ">      <!--STRUCTURAL DIRECTIVE @IF @ELSE START -->
-  <h1>Structural Directive is working with @ if and @ else.</h1>
+  <b>Structural Directive is working with @ if and @ else.</b> <br>
 value of C:{{c}} <br>
 @let a =10;                 
-@let b =20;
+@let b =20; <br>
+a is 10 and b is 20 <br>
 @if(a>b){
    {{a}} is greater than {{b}}
   }@else {
   {{b}} is greater than {{a}}
   }
 </blockquote>      <!--STRUCTURAL DIRECTIVE END -->
-
-
 
 
 <router-outlet></router-outlet>

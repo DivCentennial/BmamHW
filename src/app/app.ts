@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet, RouterLink, RouterLinkActive,Box } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { Home } from './home/home';
 import { Products } from './products/products';
 import {Emp} from './emp';
 import { Testlazy } from "./testlazy/testlazy";
+
 
 @Component({
   selector: 'app-root',
