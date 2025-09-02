@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive,Box } from '@angular/router';
 import { Home } from './home/home';
 import { Products } from './products/products';
 import {Emp} from './emp';
@@ -17,7 +17,7 @@ export class App {
 
   empno: number;
   ename: string;
-
+ c=10;
   constructor(private empl:Emp){
     this.empno=this.empl.eno;
     this.ename=this.empl.ename;  }
